@@ -1,0 +1,478 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 14:39:20,020 p=5774 u=root n=ansible | [WARNING]: Unable to parse /home/osboxes/repogit/UTN-FRA_SO_Examenes/202406/ansible/hosts as an inventory source
+
+2024-11-17 14:39:20,020 p=5774 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-17 14:39:20,027 p=5774 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-17 14:39:20,312 p=5774 u=root n=ansible | PLAY [all] *******************************************************************************************************************************
+2024-11-17 14:39:20,312 p=5774 u=root n=ansible | skipping: no hosts matched
+2024-11-17 14:39:20,312 p=5774 u=root n=ansible | PLAY RECAP *******************************************************************************************************************************
+2024-11-17 14:53:11,933 p=5870 u=root n=ansible | [WARNING]: Unable to parse /home/osboxes/repogit/UTN-FRA_SO_Examenes/202406/ansible/hosts as an inventory source
+
+2024-11-17 14:53:11,934 p=5870 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-17 14:53:11,937 p=5870 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-17 14:53:12,050 p=5870 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion
+
+2024-11-17 14:53:12,051 p=5870 u=root n=ansible | PLAY [produccion] ************************************************************************************************************************
+2024-11-17 14:53:12,051 p=5870 u=root n=ansible | skipping: no hosts matched
+2024-11-17 14:53:12,051 p=5870 u=root n=ansible | PLAY RECAP *******************************************************************************************************************************
+2024-11-17 15:05:31,427 p=5978 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 15:05:31,544 p=5978 u=root n=ansible | PLAY [produccion] ************************************************************************************************************************
+2024-11-17 15:05:31,559 p=5978 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************************************************
+2024-11-17 15:05:32,769 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:32,781 p=5978 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************
+2024-11-17 15:05:32,820 p=5978 u=root n=ansible | TASK [2do_parcial : debug] ***************************************************************************************************************
+2024-11-17 15:05:32,830 p=5978 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 15:05:32,834 p=5978 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:05:33,149 p=5978 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:05:33,349 p=5978 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:05:33,356 p=5978 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:05:33,832 p=5978 u=root n=ansible | changed: [localhost]
+2024-11-17 15:05:33,837 p=5978 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:05:34,192 p=5978 u=root n=ansible | changed: [localhost]
+2024-11-17 15:05:34,199 p=5978 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:05:34,458 p=5978 u=root n=ansible | changed: [localhost]
+2024-11-17 15:05:34,463 p=5978 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:05:34,702 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:05:34,877 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:05:34,882 p=5978 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:05:35,291 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:35,296 p=5978 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:05:35,644 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:35,650 p=5978 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:05:35,844 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:35,850 p=5978 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:05:36,047 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:05:36,218 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:05:36,224 p=5978 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:05:36,577 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:36,582 p=5978 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:05:36,935 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:36,941 p=5978 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:05:37,122 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:37,127 p=5978 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:05:37,323 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:05:37,492 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:05:37,499 p=5978 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:05:37,834 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:37,838 p=5978 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:05:38,210 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:38,215 p=5978 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:05:38,380 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:38,385 p=5978 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:05:38,566 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:05:38,739 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:05:38,746 p=5978 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:05:39,102 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:39,110 p=5978 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:05:39,462 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:39,467 p=5978 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:05:39,660 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:39,665 p=5978 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:05:39,879 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:05:40,055 p=5978 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:05:40,062 p=5978 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:05:40,403 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:40,407 p=5978 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:05:40,754 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:40,758 p=5978 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:05:40,950 p=5978 u=root n=ansible | ok: [localhost]
+2024-11-17 15:05:40,960 p=5978 u=root n=ansible | TASK [Otra tarea] ************************************************************************************************************************
+2024-11-17 15:05:40,970 p=5978 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 15:05:40,986 p=5978 u=root n=ansible | PLAY RECAP *******************************************************************************************************************************
+2024-11-17 15:05:40,987 p=5978 u=root n=ansible | localhost                  : ok=27   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 15:41:11,917 p=7169 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 15:41:12,036 p=7169 u=root n=ansible | PLAY [all] *******************************************************************************************************************************
+2024-11-17 15:41:12,042 p=7169 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************************************************
+2024-11-17 15:41:12,251 p=7169 u=root n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nroot@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2024-11-17 15:41:13,106 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:13,116 p=7169 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************
+2024-11-17 15:41:13,147 p=7169 u=root n=ansible | TASK [2do_parcial : debug] ***************************************************************************************************************
+2024-11-17 15:41:13,158 p=7169 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 15:41:13,163 p=7169 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:41:13,445 p=7169 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:41:13,624 p=7169 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:41:13,631 p=7169 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:41:14,105 p=7169 u=root n=ansible | changed: [localhost]
+2024-11-17 15:41:14,110 p=7169 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:41:14,439 p=7169 u=root n=ansible | changed: [localhost]
+2024-11-17 15:41:14,445 p=7169 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:41:14,692 p=7169 u=root n=ansible | changed: [localhost]
+2024-11-17 15:41:14,698 p=7169 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:41:14,893 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:41:15,074 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:41:15,079 p=7169 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:41:15,439 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:15,445 p=7169 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:41:15,793 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:15,798 p=7169 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:41:15,978 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:15,984 p=7169 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:41:16,173 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:41:16,344 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:41:16,350 p=7169 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:41:16,697 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:16,701 p=7169 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:41:17,058 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:17,064 p=7169 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:41:17,250 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:17,256 p=7169 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:41:17,438 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:41:17,614 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:41:17,622 p=7169 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:41:17,969 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:17,974 p=7169 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:41:18,470 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:18,486 p=7169 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:41:18,690 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:18,695 p=7169 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:41:18,906 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:41:19,104 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:41:19,114 p=7169 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:41:19,490 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:19,496 p=7169 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:41:19,852 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:19,857 p=7169 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:41:20,034 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:20,038 p=7169 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:41:20,227 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:41:20,404 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:41:20,415 p=7169 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:41:20,812 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:20,817 p=7169 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:41:21,177 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:21,181 p=7169 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:41:21,367 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:21,372 p=7169 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:41:21,575 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:41:21,752 p=7169 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:41:21,757 p=7169 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:41:22,098 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:22,103 p=7169 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:41:22,455 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:22,460 p=7169 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:41:22,758 p=7169 u=root n=ansible | ok: [localhost]
+2024-11-17 15:41:22,771 p=7169 u=root n=ansible | TASK [Otra tarea] ************************************************************************************************************************
+2024-11-17 15:41:22,802 p=7169 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 15:41:22,815 p=7169 u=root n=ansible | PLAY RECAP *******************************************************************************************************************************
+2024-11-17 15:41:22,815 p=7169 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 15:41:22,815 p=7169 u=root n=ansible | localhost                  : ok=31   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 15:42:48,779 p=8363 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 15:42:48,889 p=8363 u=root n=ansible | PLAY [produccion] ************************************************************************************************************************
+2024-11-17 15:42:48,894 p=8363 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************************************************
+2024-11-17 15:42:49,964 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:49,976 p=8363 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************
+2024-11-17 15:42:50,014 p=8363 u=root n=ansible | TASK [2do_parcial : debug] ***************************************************************************************************************
+2024-11-17 15:42:50,024 p=8363 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 15:42:50,028 p=8363 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:42:50,320 p=8363 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:42:50,527 p=8363 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:42:50,535 p=8363 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:42:51,025 p=8363 u=root n=ansible | changed: [localhost]
+2024-11-17 15:42:51,030 p=8363 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:42:51,371 p=8363 u=root n=ansible | changed: [localhost]
+2024-11-17 15:42:51,377 p=8363 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:42:51,645 p=8363 u=root n=ansible | changed: [localhost]
+2024-11-17 15:42:51,650 p=8363 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:42:51,852 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:42:52,023 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:42:52,029 p=8363 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:42:52,375 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:52,380 p=8363 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:42:52,740 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:52,746 p=8363 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:42:52,935 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:52,940 p=8363 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:42:53,149 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:42:53,326 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:42:53,331 p=8363 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:42:53,716 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:53,721 p=8363 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:42:54,085 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:54,092 p=8363 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:42:54,268 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:54,273 p=8363 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:42:54,454 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:42:54,628 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:42:54,634 p=8363 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:42:54,974 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:54,979 p=8363 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:42:55,340 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:55,347 p=8363 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:42:55,535 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:55,540 p=8363 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:42:55,736 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:42:55,932 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:42:55,939 p=8363 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:42:56,314 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:56,323 p=8363 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:42:56,705 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:56,710 p=8363 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:42:56,896 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:56,901 p=8363 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:42:57,100 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:42:57,272 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:42:57,279 p=8363 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:42:57,632 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:57,636 p=8363 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:42:58,022 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:58,027 p=8363 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:42:58,235 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:58,241 p=8363 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:42:58,427 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:42:58,600 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:42:58,606 p=8363 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:42:58,944 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:58,949 p=8363 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:42:59,307 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:59,314 p=8363 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:42:59,548 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:42:59,554 p=8363 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 15:42:59,764 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 15:42:59,945 p=8363 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 15:42:59,952 p=8363 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 15:43:00,337 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:43:00,342 p=8363 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 15:43:00,719 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:43:00,723 p=8363 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 15:43:00,905 p=8363 u=root n=ansible | ok: [localhost]
+2024-11-17 15:43:00,913 p=8363 u=root n=ansible | TASK [Otra tarea] ************************************************************************************************************************
+2024-11-17 15:43:00,926 p=8363 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 15:43:00,943 p=8363 u=root n=ansible | PLAY RECAP *******************************************************************************************************************************
+2024-11-17 15:43:00,943 p=8363 u=root n=ansible | localhost                  : ok=35   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 17:46:11,680 p=3730 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 17:46:11,939 p=3730 u=root n=ansible | PLAY [produccion] ************************************************************************************************************************
+2024-11-17 17:46:11,954 p=3730 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************************************************
+2024-11-17 17:46:13,015 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:13,026 p=3730 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************
+2024-11-17 17:46:13,066 p=3730 u=root n=ansible | TASK [2do_parcial : debug] ***************************************************************************************************************
+2024-11-17 17:46:13,076 p=3730 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 17:46:13,081 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:13,344 p=3730 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:13,522 p=3730 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:13,528 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:14,005 p=3730 u=root n=ansible | changed: [localhost]
+2024-11-17 17:46:14,009 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:14,340 p=3730 u=root n=ansible | changed: [localhost]
+2024-11-17 17:46:14,344 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:14,610 p=3730 u=root n=ansible | changed: [localhost]
+2024-11-17 17:46:14,615 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:14,853 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:15,022 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:15,027 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:15,382 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:15,386 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:15,729 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:15,733 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:15,907 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:15,911 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:16,144 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:16,319 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:16,324 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:16,668 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:16,673 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:17,034 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:17,042 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:17,258 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:17,262 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:17,463 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:17,631 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:17,637 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:17,990 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:17,994 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:18,353 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:18,358 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:18,539 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:18,543 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:18,760 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:18,917 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:18,924 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:19,266 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:19,270 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:19,623 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:19,627 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:19,798 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:19,801 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:20,043 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:20,229 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:20,235 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:20,585 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:20,589 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:20,945 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:20,951 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:21,160 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:21,166 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:21,358 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:21,523 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:21,527 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:21,868 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:21,873 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:22,297 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:22,305 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:22,485 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:22,491 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:22,675 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:22,857 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:22,861 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:23,210 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:23,213 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:23,549 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:23,553 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:23,735 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:23,739 p=3730 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:46:23,923 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:46:24,099 p=3730 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:46:24,105 p=3730 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:46:24,465 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:24,469 p=3730 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:46:24,804 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:24,812 p=3730 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:46:25,035 p=3730 u=root n=ansible | ok: [localhost]
+2024-11-17 17:46:25,042 p=3730 u=root n=ansible | TASK [Otra tarea] ************************************************************************************************************************
+2024-11-17 17:46:25,052 p=3730 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 17:46:25,065 p=3730 u=root n=ansible | PLAY RECAP *******************************************************************************************************************************
+2024-11-17 17:46:25,065 p=3730 u=root n=ansible | localhost                  : ok=39   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-17 17:51:00,411 p=5479 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-17 17:51:00,525 p=5479 u=root n=ansible | PLAY [produccion] ************************************************************************************************************************
+2024-11-17 17:51:00,530 p=5479 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************************************************
+2024-11-17 17:51:01,540 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:01,551 p=5479 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************
+2024-11-17 17:51:01,589 p=5479 u=root n=ansible | TASK [2do_parcial : debug] ***************************************************************************************************************
+2024-11-17 17:51:01,598 p=5479 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-17 17:51:01,603 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:01,872 p=5479 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:02,047 p=5479 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:02,053 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:02,532 p=5479 u=root n=ansible | changed: [localhost]
+2024-11-17 17:51:02,536 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:02,856 p=5479 u=root n=ansible | changed: [localhost]
+2024-11-17 17:51:02,860 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:03,127 p=5479 u=root n=ansible | changed: [localhost]
+2024-11-17 17:51:03,133 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:03,323 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:03,505 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:03,513 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:03,887 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:03,893 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:04,222 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:04,227 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:04,415 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:04,420 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:04,628 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:04,797 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:04,802 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:05,150 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:05,154 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:05,530 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:05,534 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:05,772 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:05,777 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:05,959 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:06,137 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:06,142 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:06,491 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:06,496 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:06,854 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:06,867 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:07,094 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:07,099 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:07,306 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:07,492 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:07,499 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:07,849 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:07,855 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:08,197 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:08,201 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:08,402 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:08,407 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:08,610 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:08,783 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:08,789 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:09,185 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:09,190 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:09,577 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:09,582 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:09,822 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:09,828 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:10,056 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:10,223 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:10,231 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:10,577 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:10,582 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:10,929 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:10,936 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:11,121 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:11,126 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:11,350 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:11,512 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:11,519 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:11,888 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:11,892 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:12,229 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:12,235 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:12,408 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:12,413 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:12,601 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:12,776 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:12,781 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:13,174 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:13,180 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:13,531 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:13,538 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:13,716 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:13,721 p=5479 u=root n=ansible | TASK [2do_parcial : Create required directories] *****************************************************************************************
+2024-11-17 17:51:13,900 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-17 17:51:14,072 p=5479 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-17 17:51:14,078 p=5479 u=root n=ansible | TASK [2do_parcial : Create student file data] ********************************************************************************************
+2024-11-17 17:51:14,451 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:14,456 p=5479 u=root n=ansible | TASK [2do_parcial : Create pc file data] *************************************************************************************************
+2024-11-17 17:51:14,861 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:14,866 p=5479 u=root n=ansible | TASK [2do_parcial : Set permitions 2PSupervisores] ***************************************************************************************
+2024-11-17 17:51:15,049 p=5479 u=root n=ansible | ok: [localhost]
+2024-11-17 17:51:15,057 p=5479 u=root n=ansible | TASK [Otra tarea] ************************************************************************************************************************
+2024-11-17 17:51:15,068 p=5479 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-17 17:51:15,085 p=5479 u=root n=ansible | PLAY RECAP *******************************************************************************************************************************
+2024-11-17 17:51:15,085 p=5479 u=root n=ansible | localhost                  : ok=43   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
