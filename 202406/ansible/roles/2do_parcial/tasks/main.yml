@@ -28,11 +28,10 @@
     dest: /tmp/2do_parcial/equipo/datos_equipo.txt
   vars:
     pc_ip: "190.49.109.151"
-    pc_distribution: "Distributor ID:	Ubuntu
-Description:	Ubuntu 24.04.1 LTS"
+    pc_distribution: "Description:	Ubuntu 24.04.1 LTS"
     pc_cores: "5"
 
-- name: Set permitions 2PSupervisores
+- name: Set permissions 2PSupervisores
   lineinfile:
     path: /etc/sudoers
     state: present

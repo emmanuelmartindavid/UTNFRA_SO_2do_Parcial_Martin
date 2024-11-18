@@ -38,10 +38,10 @@ sudo tee -a /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/r
     dest: /tmp/2do_parcial/equipo/datos_equipo.txt
   vars:
     pc_ip: "$(curl -s ifconfig.me)"
-    pc_distribution: "$(lsb_release -a | grep D)"
+    pc_distribution: "$(lsb_release -d)"
     pc_cores: "$(nproc)"
 
-- name: Set permitions 2PSupervisores
+- name: Set permissions 2PSupervisores
   lineinfile:
     path: /etc/sudoers
     state: present

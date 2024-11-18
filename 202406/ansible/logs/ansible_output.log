@@ -501,3 +501,78 @@
 }
 2024-11-18 08:51:48,582 p=4018 u=root n=ansible | PLAY RECAP *****************************************************************************************************************
 2024-11-18 08:51:48,582 p=4018 u=root n=ansible | localhost                  : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 14:28:00,154 p=4593 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 14:28:00,422 p=4593 u=root n=ansible | PLAY [produccion] **************************************************************************************************
+2024-11-18 14:28:00,439 p=4593 u=root n=ansible | TASK [Gathering Facts] *********************************************************************************************
+2024-11-18 14:28:01,625 p=4593 u=root n=ansible | ok: [localhost]
+2024-11-18 14:28:01,636 p=4593 u=root n=ansible | TASK [include_role : 2do_parcial] **********************************************************************************
+2024-11-18 14:28:01,668 p=4593 u=root n=ansible | TASK [2do_parcial : debug] *****************************************************************************************
+2024-11-18 14:28:01,679 p=4593 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 14:28:01,685 p=4593 u=root n=ansible | TASK [2do_parcial : Create required directories] *******************************************************************
+2024-11-18 14:28:01,988 p=4593 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-18 14:28:02,163 p=4593 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-18 14:28:02,170 p=4593 u=root n=ansible | TASK [2do_parcial : Create student file data] **********************************************************************
+2024-11-18 14:28:02,681 p=4593 u=root n=ansible | changed: [localhost]
+2024-11-18 14:28:02,686 p=4593 u=root n=ansible | TASK [2do_parcial : Create pc file data] ***************************************************************************
+2024-11-18 14:28:03,023 p=4593 u=root n=ansible | changed: [localhost]
+2024-11-18 14:28:03,028 p=4593 u=root n=ansible | TASK [2do_parcial : Set permissions 2PSupervisores] ****************************************************************
+2024-11-18 14:28:03,291 p=4593 u=root n=ansible | changed: [localhost]
+2024-11-18 14:28:03,299 p=4593 u=root n=ansible | TASK [Otra tarea] **************************************************************************************************
+2024-11-18 14:28:03,309 p=4593 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 14:28:03,323 p=4593 u=root n=ansible | PLAY RECAP *********************************************************************************************************
+2024-11-18 14:28:03,324 p=4593 u=root n=ansible | localhost                  : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 14:40:07,916 p=5073 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 14:40:08,030 p=5073 u=root n=ansible | PLAY [produccion] **********************************************************************************************************************************************************
+2024-11-18 14:40:08,037 p=5073 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************
+2024-11-18 14:40:09,012 p=5073 u=root n=ansible | ok: [localhost]
+2024-11-18 14:40:09,022 p=5073 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************************************************************
+2024-11-18 14:40:09,046 p=5073 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************************************************************
+2024-11-18 14:40:09,057 p=5073 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 14:40:09,061 p=5073 u=root n=ansible | TASK [2do_parcial : Create required directories] ***************************************************************************************************************************
+2024-11-18 14:40:09,337 p=5073 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-18 14:40:09,506 p=5073 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-18 14:40:09,514 p=5073 u=root n=ansible | TASK [2do_parcial : Create student file data] ******************************************************************************************************************************
+2024-11-18 14:40:09,938 p=5073 u=root n=ansible | ok: [localhost]
+2024-11-18 14:40:09,943 p=5073 u=root n=ansible | TASK [2do_parcial : Create pc file data] ***********************************************************************************************************************************
+2024-11-18 14:40:10,280 p=5073 u=root n=ansible | ok: [localhost]
+2024-11-18 14:40:10,284 p=5073 u=root n=ansible | TASK [2do_parcial : Set permissions 2PSupervisores] ************************************************************************************************************************
+2024-11-18 14:40:10,534 p=5073 u=root n=ansible | ok: [localhost]
+2024-11-18 14:40:10,543 p=5073 u=root n=ansible | TASK [Otra tarea] **********************************************************************************************************************************************************
+2024-11-18 14:40:10,554 p=5073 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 14:40:10,568 p=5073 u=root n=ansible | PLAY RECAP *****************************************************************************************************************************************************************
+2024-11-18 14:40:10,568 p=5073 u=root n=ansible | localhost                  : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 14:42:29,193 p=5438 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 14:42:29,297 p=5438 u=root n=ansible | PLAY [produccion] **********************************************************************************************************************************************************
+2024-11-18 14:42:29,313 p=5438 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************
+2024-11-18 14:42:30,306 p=5438 u=root n=ansible | ok: [localhost]
+2024-11-18 14:42:30,317 p=5438 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************************************************************
+2024-11-18 14:42:30,341 p=5438 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************************************************************
+2024-11-18 14:42:30,351 p=5438 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 14:42:30,354 p=5438 u=root n=ansible | TASK [2do_parcial : Create required directories] ***************************************************************************************************************************
+2024-11-18 14:42:30,641 p=5438 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-18 14:42:30,804 p=5438 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-18 14:42:30,810 p=5438 u=root n=ansible | TASK [2do_parcial : Create student file data] ******************************************************************************************************************************
+2024-11-18 14:42:31,276 p=5438 u=root n=ansible | changed: [localhost]
+2024-11-18 14:42:31,283 p=5438 u=root n=ansible | TASK [2do_parcial : Create pc file data] ***********************************************************************************************************************************
+2024-11-18 14:42:31,657 p=5438 u=root n=ansible | changed: [localhost]
+2024-11-18 14:42:31,663 p=5438 u=root n=ansible | TASK [2do_parcial : Set permissions 2PSupervisores] ************************************************************************************************************************
+2024-11-18 14:42:31,914 p=5438 u=root n=ansible | changed: [localhost]
+2024-11-18 14:42:31,925 p=5438 u=root n=ansible | TASK [Otra tarea] **********************************************************************************************************************************************************
+2024-11-18 14:42:31,935 p=5438 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 14:42:31,954 p=5438 u=root n=ansible | PLAY RECAP *****************************************************************************************************************************************************************
+2024-11-18 14:42:31,954 p=5438 u=root n=ansible | localhost                  : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
