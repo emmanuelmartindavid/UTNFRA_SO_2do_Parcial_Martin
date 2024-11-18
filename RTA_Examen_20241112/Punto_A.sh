@@ -35,7 +35,7 @@ n
 p
 
 
-+150M
++300M
 n
 e
 
@@ -82,3 +82,8 @@ echo "SWAP"
 free -h
 echo "MONTAJE"
 df -h
+
+#COMANDOS QUE UTILIZO PARA HACER LA EXTENSION Y  EL RESIZE DEL DIRECTORIO DE DOCKER.
+#sudo lvextend -L +292M /dev/vg_datos/lv_docker
+#sudo resize2fs /dev/vg_datos/lv_docker
+#
