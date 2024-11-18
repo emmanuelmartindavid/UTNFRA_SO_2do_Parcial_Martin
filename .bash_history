@@ -4709,3 +4709,199 @@ ls
 cd UTNFRA_SO_2do_Parcial_Martin/
 ls
 cp $HOME/.bash_history 
+ls
+sudo ls
+cd
+ls
+docker ps
+sudo docker ps
+docker status
+sudo systemctl status docker
+ls -l
+ls
+pwd
+exit
+ls
+exit
+sudo ls
+cd
+pwd
+ls
+cd repogit/
+ls
+sudo cd UTN-FRA_SO_2do_Parcial_Martin
+cd UTN-FRA_SO_2do_Parcial_Martin
+cd UTNFRA_SO_2do_Parcial_Martin
+ls
+git status
+cd
+cd repogit/
+sudo rm -rf UTNFRA_SO_2do_Parcial_Martin/
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+sudo git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+ls
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+exit
+history
+cd
+exit
+cd
+cd repogit/
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+exit
+cd
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Martin/
+ls
+cd
+pwd
+ls
+cd pruebas/
+ls
+cd
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Martin/
+ls
+git status
+cd
+exit
+cd
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_1P2C_2024_Martine.git
+git config
+exit
+ssh -T git@github.com
+sudo ssh -T git@github.com
+exit
+ssh-keygen -t ed25519
+ls -l
+sudo ls -l
+cd /
+ls -l
+exit
+cd
+ls -la
+cd .ssh/
+ls
+exit
+cd
+cd .ssh/
+ls
+sudo rm id_ed25519
+sudo rm id_ed25519.pub
+sudo rm known_hosts
+ls
+ls -la
+exit
+cd
+cd .ssh/
+ls
+ls -la
+cd
+ls -l
+ls -la
+exit
+cd
+cd .ssh/
+ls
+exit
+cd
+cd .ssh/
+ls
+cd
+ssh -T git@github.com
+exit
+cd
+ls
+cd repogit/
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+ssh -T git@github.com
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+exit
+cd
+cd repogit/
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+exit
+cd
+cd repogit/
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+ls
+chmod 600 /home/emmanuel/.ssh/id_ed25519
+git clone git@github.com:emmanuelmartindavid/UTNFRA_SO_2do_Parcial_Martin.git
+ls
+cd UTNFRA_SO_2do_Parcial_Martin/
+ls
+cd RTA_Examen_20241112/
+ls
+cd
+exit
+cd
+ls
+cd RTA_Examen_20241112/
+ls
+cat borraA.sh
+ls
+cd
+cd repogit/
+cd UTNFRA_SO_2do_Parcial_Martin/
+cp /home/emmanuel/RTA_Examen_20241112/borraA.sh /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/RTA_Examen_20241112/
+ls
+cd RTA_Examen_20241112/
+ls
+cp /home/emmanuel/RTA_Examen_20241112/borraB.sh /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/RTA_Examen_20241112/
+cp /home/emmanuel/RTA_Examen_20241112/borraD.sh /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/RTA_Examen_20241112/
+ls
+nano Punto_B.sh
+nano borraB.sh
+nano borraA.sh
+nano Punto_D.sh
+./Punto_A.sh
+./Punto_B.sh
+ls
+nano Punto_B.sh
+su 2P_202406_Supervisor
+./Punto_D.sh
+ls /tmp/
+ls 2do_parcial
+cd /tmp/2do_parcial/
+ls
+cd alumno/
+ls
+cat datos_alumno.txt
+cd ..
+cd alumno/
+cd ..
+cd equipo/
+cat datos_equipo.txt
+cd
+su 2P_202406_Supervisor
+cd repogit/
+cd UTNFRA_SO_2do_Parcial_Martin/
+ls
+cd 202406/
+cd ansible/
+cd roles/
+cd 2do_parcial/
+ls
+cd tasks/
+ls
+cat main.yml
+cd ..
+ls
+cd templates/
+ls
+cat datos_
+cat datos_alumno.txt.j2
+cat datos_equipo.txt.j2
+cd ..
+cd .
+cd ..
+git status
+git add .
+git commit -m "fix: arreglo de cambio de usuario solicitado en el parcial"
+git config --global user.email "emmanuel.david.martin77@gmail.com"
+git config --global user.name "emmanuelmartindavid"
+git commit -m "fix: arreglo de cambio de usuario solicitado en el parcial"
+git status
