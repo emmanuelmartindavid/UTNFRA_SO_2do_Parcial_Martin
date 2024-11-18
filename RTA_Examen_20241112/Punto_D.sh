@@ -1,19 +1,19 @@
 #!/bin/bash
-sudo mkdir -p /home/osboxes/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/templates
-sudo tee /home/osboxes/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/templates/datos_alumno.txt.j2 << EOF
+sudo mkdir -p /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/templates
+sudo tee /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/templates/datos_alumno.txt.j2 << EOF
 Nombre: {{ student_name }}
 Apellido: {{ student_lastName }}
 Division: {{ student_class }}
 EOF
 
-sudo tee /home/osboxes/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/templates/datos_equipo.txt.j2 << EOF
+sudo tee /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/templates/datos_equipo.txt.j2 << EOF
 Ip: {{ pc_ip }}
 Descripción: {{ pc_distribution }}
 Cantidad_de_cores: {{ pc_cores }}
 EOF
 
 
-sudo tee -a /home/osboxes/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml << EOF
+sudo tee -a /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/main.yml << EOF
 - name: Create required directories
   file:
     path: "{{ item }}"
@@ -50,5 +50,5 @@ sudo tee -a /home/osboxes/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_p
     validate: 'visudo -cf %s'
 EOF
 
-cd /home/osboxes/repogit/UTN-FRA_SO_Examenes/202406/ansible
+cd /home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible
 sudo ansible-playbook -i inventory/hosts playbook.yml
