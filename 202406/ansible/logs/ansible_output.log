@@ -853,3 +853,233 @@
 }
 2024-11-18 21:59:15,157 p=4688 u=root n=ansible | PLAY RECAP ********************************************************************************************************************************************************
 2024-11-18 21:59:15,159 p=4688 u=root n=ansible | localhost                  : ok=13   changed=10   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 04:48:56,207 p=3190 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 04:48:56,467 p=3190 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 04:48:56,481 p=3190 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 04:48:57,662 p=3190 u=root n=ansible | ok: [localhost]
+2024-11-19 04:48:57,673 p=3190 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 04:48:57,701 p=3190 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to be in '/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/create_pc_file.yml': line 7, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  vars:
+    Ip: {{ ansible_default_ipv4.address }}
+         ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-11-19 04:53:29,910 p=3373 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 04:53:30,028 p=3373 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 04:53:30,034 p=3373 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 04:53:31,022 p=3373 u=root n=ansible | ok: [localhost]
+2024-11-19 04:53:31,033 p=3373 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 04:53:31,055 p=3373 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to be in '/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/create_pc_file.yml': line 7, column 18, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  vars:
+    ip_address: {{ ansible_default_ipv4.address }}
+                 ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-11-19 04:53:52,365 p=3501 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 04:53:52,474 p=3501 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 04:53:52,481 p=3501 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 04:53:53,525 p=3501 u=root n=ansible | ok: [localhost]
+2024-11-19 04:53:53,536 p=3501 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 04:53:53,556 p=3501 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to be in '/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/create_pc_file.yml': line 7, column 18, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  vars:
+    ip_address: {{ ansible_default_ipv4.address }}
+                 ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-11-19 04:56:42,554 p=3679 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 04:56:42,667 p=3679 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 04:56:42,674 p=3679 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 04:56:43,657 p=3679 u=root n=ansible | ok: [localhost]
+2024-11-19 04:56:43,668 p=3679 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 04:56:43,701 p=3679 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************
+2024-11-19 04:56:43,712 p=3679 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 04:56:43,716 p=3679 u=root n=ansible | TASK [2do_parcial : Create templates directory] ****************************************************************************
+2024-11-19 04:56:43,993 p=3679 u=root n=ansible | changed: [localhost]
+2024-11-19 04:56:44,000 p=3679 u=root n=ansible | TASK [2do_parcial : Create student template] *******************************************************************************
+2024-11-19 04:56:44,012 p=3679 u=root n=ansible | fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'student_name' is undefined. 'student_name' is undefined\n\nThe error appears to be in '/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/create_templates.yml': line 8, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Create student template\n  ^ here\n"}
+2024-11-19 04:56:44,014 p=3679 u=root n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-11-19 04:56:44,014 p=3679 u=root n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 04:58:52,409 p=3878 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 04:58:52,530 p=3878 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 04:58:52,535 p=3878 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 04:58:53,529 p=3878 u=root n=ansible | ok: [localhost]
+2024-11-19 04:58:53,540 p=3878 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 04:58:53,571 p=3878 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************
+2024-11-19 04:58:53,582 p=3878 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 04:58:53,592 p=3878 u=root n=ansible | TASK [2do_parcial : Create templates directory] ****************************************************************************
+2024-11-19 04:58:53,906 p=3878 u=root n=ansible | changed: [localhost]
+2024-11-19 04:58:53,914 p=3878 u=root n=ansible | TASK [2do_parcial : Create student template] *******************************************************************************
+2024-11-19 04:58:53,924 p=3878 u=root n=ansible | fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'student_name' is undefined. 'student_name' is undefined\n\nThe error appears to be in '/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/create_templates.yml': line 8, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Create student template\n  ^ here\n"}
+2024-11-19 04:58:53,925 p=3878 u=root n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-11-19 04:58:53,925 p=3878 u=root n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 05:01:01,331 p=4080 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 05:01:01,443 p=4080 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 05:01:01,449 p=4080 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 05:01:02,476 p=4080 u=root n=ansible | ok: [localhost]
+2024-11-19 05:01:02,486 p=4080 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 05:01:02,519 p=4080 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************
+2024-11-19 05:01:02,530 p=4080 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 05:01:02,535 p=4080 u=root n=ansible | TASK [2do_parcial : Create templates directory] ****************************************************************************
+2024-11-19 05:01:02,811 p=4080 u=root n=ansible | changed: [localhost]
+2024-11-19 05:01:02,817 p=4080 u=root n=ansible | TASK [2do_parcial : Create student template] *******************************************************************************
+2024-11-19 05:01:02,826 p=4080 u=root n=ansible | fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'student_name' is undefined. 'student_name' is undefined\n\nThe error appears to be in '/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/create_templates.yml': line 8, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Create student template\n  ^ here\n"}
+2024-11-19 05:01:02,828 p=4080 u=root n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-11-19 05:01:02,828 p=4080 u=root n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 05:12:58,164 p=4373 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 05:12:58,290 p=4373 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 05:12:58,296 p=4373 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 05:12:59,352 p=4373 u=root n=ansible | ok: [localhost]
+2024-11-19 05:12:59,364 p=4373 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 05:12:59,391 p=4373 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************
+2024-11-19 05:12:59,402 p=4373 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 05:12:59,407 p=4373 u=root n=ansible | TASK [2do_parcial : Create required directories] ***************************************************************************
+2024-11-19 05:12:59,692 p=4373 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-19 05:12:59,868 p=4373 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-19 05:12:59,878 p=4373 u=root n=ansible | TASK [2do_parcial : Create student file data] ******************************************************************************
+2024-11-19 05:12:59,920 p=4373 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-11-19 05:12:59,920 p=4373 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'datos_alumno.txt.j2'\nSearched in:\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/templates/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/templates/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/templates/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/datos_alumno.txt.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-11-19 05:12:59,922 p=4373 u=root n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-11-19 05:12:59,922 p=4373 u=root n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 05:17:24,719 p=4675 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 05:17:24,835 p=4675 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 05:17:24,843 p=4675 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 05:17:25,858 p=4675 u=root n=ansible | ok: [localhost]
+2024-11-19 05:17:25,869 p=4675 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 05:17:25,898 p=4675 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************
+2024-11-19 05:17:25,934 p=4675 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 05:17:25,943 p=4675 u=root n=ansible | TASK [2do_parcial : Create required directories] ***************************************************************************
+2024-11-19 05:17:26,229 p=4675 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-19 05:17:26,411 p=4675 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-19 05:17:26,418 p=4675 u=root n=ansible | TASK [2do_parcial : Create student file data] ******************************************************************************
+2024-11-19 05:17:26,461 p=4675 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-11-19 05:17:26,461 p=4675 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'datos_alumno.txt.j2'\nSearched in:\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/templates/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/templates/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/templates/datos_alumno.txt.j2\n\t/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/datos_alumno.txt.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-11-19 05:17:26,462 p=4675 u=root n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-11-19 05:17:26,462 p=4675 u=root n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 05:23:29,155 p=5012 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 05:23:29,273 p=5012 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 05:23:29,279 p=5012 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 05:23:30,326 p=5012 u=root n=ansible | ok: [localhost]
+2024-11-19 05:23:30,337 p=5012 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 05:23:30,364 p=5012 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************
+2024-11-19 05:23:30,375 p=5012 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 05:23:30,379 p=5012 u=root n=ansible | TASK [2do_parcial : Create required directories] ***************************************************************************
+2024-11-19 05:23:30,682 p=5012 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-19 05:23:30,902 p=5012 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-19 05:23:30,911 p=5012 u=root n=ansible | TASK [2do_parcial : Create student file data] ******************************************************************************
+2024-11-19 05:23:31,405 p=5012 u=root n=ansible | changed: [localhost]
+2024-11-19 05:23:31,411 p=5012 u=root n=ansible | TASK [2do_parcial : Create pc file data] ***********************************************************************************
+2024-11-19 05:23:31,766 p=5012 u=root n=ansible | changed: [localhost]
+2024-11-19 05:23:31,771 p=5012 u=root n=ansible | TASK [2do_parcial : Set permissions 2PSupervisores] ************************************************************************
+2024-11-19 05:23:32,058 p=5012 u=root n=ansible | changed: [localhost]
+2024-11-19 05:23:32,068 p=5012 u=root n=ansible | TASK [Otra tarea] **********************************************************************************************************
+2024-11-19 05:23:32,077 p=5012 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 05:23:32,092 p=5012 u=root n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-11-19 05:23:32,093 p=5012 u=root n=ansible | localhost                  : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 05:25:56,502 p=5336 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 05:25:56,617 p=5336 u=root n=ansible | PLAY [produccion] **********************************************************************************************************
+2024-11-19 05:25:56,624 p=5336 u=root n=ansible | TASK [Gathering Facts] *****************************************************************************************************
+2024-11-19 05:25:57,670 p=5336 u=root n=ansible | ok: [localhost]
+2024-11-19 05:25:57,681 p=5336 u=root n=ansible | TASK [include_role : 2do_parcial] ******************************************************************************************
+2024-11-19 05:25:57,707 p=5336 u=root n=ansible | TASK [2do_parcial : debug] *************************************************************************************************
+2024-11-19 05:25:57,743 p=5336 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-19 05:25:57,750 p=5336 u=root n=ansible | TASK [2do_parcial : Create required directories] ***************************************************************************
+2024-11-19 05:25:58,030 p=5336 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-19 05:25:58,220 p=5336 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-19 05:25:58,232 p=5336 u=root n=ansible | TASK [2do_parcial : Create student file data] ******************************************************************************
+2024-11-19 05:25:58,691 p=5336 u=root n=ansible | ok: [localhost]
+2024-11-19 05:25:58,696 p=5336 u=root n=ansible | TASK [2do_parcial : Create pc file data] ***********************************************************************************
+2024-11-19 05:25:59,067 p=5336 u=root n=ansible | ok: [localhost]
+2024-11-19 05:25:59,071 p=5336 u=root n=ansible | TASK [2do_parcial : Set permissions 2PSupervisores] ************************************************************************
+2024-11-19 05:25:59,352 p=5336 u=root n=ansible | ok: [localhost]
+2024-11-19 05:25:59,363 p=5336 u=root n=ansible | TASK [Otra tarea] **********************************************************************************************************
+2024-11-19 05:25:59,374 p=5336 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 05:25:59,388 p=5336 u=root n=ansible | PLAY RECAP *****************************************************************************************************************
+2024-11-19 05:25:59,388 p=5336 u=root n=ansible | localhost                  : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

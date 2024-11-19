@@ -3,3 +3,7 @@
   template:
     src: datos_alumno.txt.j2
     dest: /tmp/2do_parcial/alumno/datos_alumno.txt
+  vars:
+    student_name: "Emmanuel"
+    student_lastName: "Martin"
+    student_class: "115"

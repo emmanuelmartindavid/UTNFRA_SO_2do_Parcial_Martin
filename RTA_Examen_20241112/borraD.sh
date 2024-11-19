@@ -1,20 +1,20 @@
 #!/bin/bash
 
 # Definir las rutas de los archivos y directorios
-TEMPLATES_DIR="/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/templates"
-ALUMNO_FILE="$TEMPLATES_DIR/datos_alumno.txt.j2"
-EQUIPO_FILE="$TEMPLATES_DIR/datos_equipo.txt.j2"
+#TEMPLATES_DIR="/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/templates"
+#ALUMNO_FILE="$TEMPLATES_DIR/datos_alumno.txt.j2"
+#EQUIPO_FILE="$TEMPLATES_DIR/datos_equipo.txt.j2"
 MAIN_YML="/home/emmanuel/repogit/UTNFRA_SO_2do_Parcial_Martin/202406/ansible/roles/2do_parcial/tasks/main.yml"
 DIRECTORIOS="/home/emmanuel/2do_parcial"
 TMP_DIRECTORIOS="/tmp/2do_parcial"
 
-sudo rm -rf /home/emmanuel/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/templates
+#sudo rm -rf /home/emmanuel/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/templates
 sudo rm -rf /tmp/2do_parcial
 # Eliminar los archivos de plantilla
-if [ -f "$ALUMNO_FILE" ]; then
-    sudo rm "$ALUMNO_FILE"
-    echo "Archivo $ALUMNO_FILE eliminado."
-fi
+#if [ -f "$ALUMNO_FILE" ]; then
+#    sudo rm "$ALUMNO_FILE"
+#    echo "Archivo $ALUMNO_FILE eliminado."
+#fi
 
 if [ -f "$EQUIPO_FILE" ]; then
     sudo rm "$EQUIPO_FILE"

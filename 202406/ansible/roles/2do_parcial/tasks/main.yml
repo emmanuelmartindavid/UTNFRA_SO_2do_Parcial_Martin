@@ -4,9 +4,6 @@
 - debug:
     msg: "Tareas del 2do Parcial"
 
-- name: Create templates
-  import_tasks: create_templates.yml
-
 - name: Create required directories
   import_tasks: create_directories.yml
 

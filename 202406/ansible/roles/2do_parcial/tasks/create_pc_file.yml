@@ -3,3 +3,7 @@
   template:
     src: datos_equipo.txt.j2
     dest: /tmp/2do_parcial/equipo/datos_equipo.txt
+  vars:
+    ip_address: "{{ ansible_default_ipv4.address }}"
+    distribution_info: "{{ ansible_facts.distribution }}"
+    num_cores: "{{ ansible_facts.processor_cores }}"
