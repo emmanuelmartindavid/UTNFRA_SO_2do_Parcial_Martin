@@ -1,0 +1,5 @@
+---
+- name: Create pc file data
+  template:
+    src: datos_equipo.txt.j2
+    dest: /tmp/2do_parcial/equipo/datos_equipo.txt

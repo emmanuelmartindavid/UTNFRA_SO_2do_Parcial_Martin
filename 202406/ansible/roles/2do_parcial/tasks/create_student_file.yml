@@ -1,0 +1,5 @@
+---
+- name: Create student file data
+  template:
+    src: datos_alumno.txt.j2
+    dest: /tmp/2do_parcial/alumno/datos_alumno.txt

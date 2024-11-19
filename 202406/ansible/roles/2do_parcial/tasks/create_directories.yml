@@ -1,0 +1,9 @@
+---
+- name: Create required directories
+  file:
+    path: "{{ item }}"
+    state: directory
+    mode: '0755'
+  with_items:
+    - /tmp/2do_parcial/alumno
+    - /tmp/2do_parcial/equipo
